@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | Impact By Distinctive Themes</title>
+    <title>Masjid Aisha Mill Basin</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/pe-icons.css" rel="stylesheet">
@@ -255,24 +255,13 @@
     <script src="js/plugins.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <!-- <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2XkHcUHIulgs-sK6YyScJBqXoIZqMX0Y&amp;sensor=true"></script> -->
     <script src="js/init.js"></script>
 
     <script type="text/javascript">
-        //Sunset tonight at the Triggertrap office
         var sunset = new Date().sunset(40.619208, -73.9211437);
         $("#sunsetTime").text(sunset.toLocaleTimeString().substr(0, sunset.toLocaleTimeString().lastIndexOf(':')) + "  " + sunset.toLocaleTimeString().substr(sunset.toLocaleTimeString().lastIndexOf(':') + 4));
-
-
         var sunrise = new Date().sunrise(40.619208, -73.9211437);
         $("#sunriseTime").text(sunrise.toLocaleTimeString().substr(0, sunrise.toLocaleTimeString().lastIndexOf(':')) + "  " + sunrise.toLocaleTimeString().substr(sunrise.toLocaleTimeString().lastIndexOf(':') + 4));
-
-        // //Combine it with geolocation. Sunset tonight at your location.
-        // navigator.geolocation.getCurrentPosition(function (position) {
-        //     var sunset = new Date().sunset(position.coords.latitude, position.coords.longitude);
-        // });
-
     </script>
 
 </body>
