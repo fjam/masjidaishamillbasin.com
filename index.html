@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Impact By Distinctive Themes</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/sun.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/bg1.jpg",
+            ], { duration: 5000, fade: 500, centeredY: true });
+        });
+    </script>
+</head>
+<!--/head-->
+
+<body>
+    <div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#prayerTime">Prayer Times</a></li>
+                    <li><a href="#pictures">Pictures</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <div style="color: white; font-size: 24px;">
+                                        <strong>NOTICE: Due to coronavirus and saftey concerns,
+                                            we have our first Jumuah Salah at 1:30 pm khutba will start at 1:15 and
+                                            jummah salah will be 1:30 pm. Masjid will open at 1:15 pm. Requesting all
+                                            brother do not come to masjid
+                                            before 1:15pm. Only 45 people are allowed or first Salah. Also to enter in
+                                            to the masjid use back door on East
+                                            58 street side Or if you are waiting for Second jumuah salah plase wait on
+                                            East 58 st side .not on Main
+                                            entrance on Ave N. Second Jumuah Salah from 1:40pm to 1:50pm. This
+                                            announcement was made for your protection. May
+                                            Allah keep you safe.</strong>
+                                    </div>
+                                    <br>
+                                    <a class="btn btn-md animation bounce-in" href="#services">As-salamu alaykum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="content-wrapper">
+        <section id="services" class="white">
+            <section id="pricing" class="white">
+                <div class="container">
+                    <div class="center gap fade-down section-heading">
+                        <h2 id="prayerTime" class="main-title">Prayer Times</h2>
+                        <hr>
+                    </div>
+                    <div class="gap"></div>
+                    <div id="pricing-table" class="row">
+                        <div class="col-md-6 col-xs-6 flip-in" style="padding: 0;">
+                            <ul class="plan">
+                                <li class="plan-name">
+                                    <h3>Fajr</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>Sunrise</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>Dhuhr</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>Asr</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>Maghrib</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>Isha</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>Jummah</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.col-md-3-->
+                        <div class="col-md-6 col-xs-6 flip-in" style="padding: 0;">
+                            <ul class="plan">
+                                <li class="plan-name">
+                                    <h3>5:37 AM</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3 id="sunriseTime"></h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>1:03 PM</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>4:31 PM</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3 id="sunsetTime"></h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>8:28 PM</h3>
+                                </li>
+                                <li class="plan-name">
+                                    <h3>1:30 PM</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="about-us" class="white">
+                <div class="container">
+                    <div class="center gap fade-down section-heading">
+                        <hr>
+                    </div>
+                    <div id="meet-the-team " class="row">
+                        <div class="col-md-3 col-xs-6" id="pictures">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="img-responsive img-thumbnail bounce-in" src="images/bg1.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/bg1.jpg"
+                                            rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="img-responsive img-thumbnail bounce-in" src="images/bg2.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/bg2.jpg"
+                                            rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="img-responsive img-thumbnail bounce-in" src="images/bg3.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/bg3.jpg"
+                                            rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="img-responsive img-thumbnail bounce-in" src="images/bg4.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/bg4.jpg"
+                                            rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="mapwrapper">
+                <iframe id="location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.4730324637762!2d-73.91898069999999!3d40.619448899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24371c45ebf95%3A0x8e0de1ae36751ffe!2sMasjid%20Aisha%20Mill%20Basin%20Islamic%20Center!5e0!3m2!1sen!2sus!4v1585062512626!5m2!1sen!2sus"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+    </div>
+
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Location</h4>
+                        <address>
+                            Basement of<br>
+                            5804 Avenue N,<br>
+                            Brooklyn, NY 11234<br>
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> (718) 775-8382
+                        </address>
+                    </div>
+                    <!--/.col-md-3-->
+                </div>
+            </div>
+        </section>
+        <!--/#bottom-->
+
+
+    </div>
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <!-- <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2XkHcUHIulgs-sK6YyScJBqXoIZqMX0Y&amp;sensor=true"></script> -->
+    <script src="js/init.js"></script>
+
+    <script type="text/javascript">
+        //Sunset tonight at the Triggertrap office
+        var sunset = new Date().sunset(40.619208, -73.9211437);
+        $("#sunsetTime").text(sunset.toLocaleTimeString().substr(0, sunset.toLocaleTimeString().lastIndexOf(':')) + "  " + sunset.toLocaleTimeString().substr(sunset.toLocaleTimeString().lastIndexOf(':') + 4));
+
+
+        var sunrise = new Date().sunrise(40.619208, -73.9211437);
+        $("#sunriseTime").text(sunrise.toLocaleTimeString().substr(0, sunrise.toLocaleTimeString().lastIndexOf(':')) + "  " + sunrise.toLocaleTimeString().substr(sunrise.toLocaleTimeString().lastIndexOf(':') + 4));
+
+        // //Combine it with geolocation. Sunset tonight at your location.
+        // navigator.geolocation.getCurrentPosition(function (position) {
+        //     var sunset = new Date().sunset(position.coords.latitude, position.coords.longitude);
+        // });
+
+    </script>
+
+</body>
+
+</html>
